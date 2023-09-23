@@ -8,7 +8,14 @@ import 'element-plus/dist/index.css'
 import App from './App.vue'
 import router from './router'
 
+//test
+import {getCategory} from '@/apis/tesiAPI'
+
+getCategory().then(res => {
+    console.log(res)
+})
 const app = createApp(App)
+
 
 app.use(createPinia())
 app.use(router)
